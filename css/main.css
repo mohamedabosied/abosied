@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* Global Rules */
+:root {
+  --font: "Quicksand", sans-serif;
+  --main-color: #ea2027;
+  --dark-color: #1e272e;
+  --dm-font: "DM Serif Display";
+}
+
+body {
+  font-family: var(--font) !important;
+  color: var(--dark-color);
+}
+
+input,
+button,
+select,
+text-area {
+  box-shadow: none !important;
+}
+.card-bg {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+}
+.card-bg:hover {
+  background-color: var(--dark-color);
+  color: white;
+}
+/* Navbar */
+.navbar .navbar-brand {
+  color: var(--main-color);
+}
+.navbar .navbar-brand:hover {
+  color: var(--main-color);
+}
+.navbar .navbar-toggler {
+  border: none !important;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: var(--dark-color);
+  font-weight: bold !important;
+  transition: 0.5s;
+  padding: 10px 10px 10px 10px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--main-color);
+  padding-right: 15px;
+}
+.navbar .navbar-nav .nav-item .nav-link:focus {
+  color: var(--main-color);
+  padding-right: 15px;
+}
+.navbar .navbar-nav .dropdown .dropdown-item {
+  font-weight: bold;
+}
+.navbar .navbar-nav .dropdown .dropdown-item:hover {
+  background-color: var(--main-color);
+  color: white !important;
+}
+.navbar .navbar-nav .nav-item .black-friday {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+.navbar .navbar-nav .nav-item .black-friday:hover {
+  padding-right: 10px !important;
+  color: white;
+  background-color: var(--dark-color);
+}
+
+/* Showcase */
+.showcase {
+  background-image: url("../img/showcase.jpg");
+  background-size: cover;
+}
+.showcase .showcase-opacity {
+  background-color: #1e272ed0;
+}
+.showcase .showcase-btn,
+.showcase .search-btn {
+  background-color: var(--main-color);
+  color: white;
+}
+.showcase .showcase-btn:hover,
+.showcase .search-btn:hover {
+  color: white;
+  background-color: var(--dark-color);
+}
+
+/* Categories */
+.shopping h1,
+.youtubers h1,
+.business h1 {
+  color: var(--main-color);
+}
+.shopping h5,
+.youtubers h5,
+.business h5 {
+  color: var(--main-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-color);
+}
+footer .footer-brand {
+  text-decoration: none;
+  color: var(--main-color) !important;
+}
+footer .nav-item:nth-child(1) .nav-link {
+  background-color: transparent;
+  padding: 10px;
+  border-left: solid 2px var(--main-color);
+  border-top: solid 2px var(--main-color);
+  border-bottom: solid 2px var(--main-color);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: var(--main-color);
+}
+footer .nav-item:nth-child(2) .nav-link {
+  background-color: transparent;
+  padding: 10px;
+  border-right: solid 2px var(--main-color);
+  border-top: solid 2px var(--main-color);
+  border-bottom: solid 2px var(--main-color);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: var(--main-color);
+}
+footer .nav-item:nth-child(1) .nav-link:hover,
+footer .nav-item:nth-child(2) .nav-link:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+footer .second .nav-item .nav-link {
+  padding: 10px !important;
+  border: none !important;
+  color: white;
+  font-weight: bold;
+  font-size: 12px !important;
+}
+footer .second .nav-item:hover .nav-link {
+  background-color: transparent;
+  color: var(--main-color);
+}
